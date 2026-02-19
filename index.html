@@ -29,22 +29,27 @@
   <main id="top" class="container">
     <!-- HERO -->
     <section class="hero">
-      <h1>Qiao-Yun (Katharina) Cheng</h1>
-      <p class="subtitle">
-        I'm seeking roles in <strong>Data Analytics / Data Science</strong>, <strong>Full-Stack Web Development</strong>,
-        or <strong>ML/AI Engineering</strong>—building end-to-end systems that turn messy data into insights and ship
-        those insights into usable products.
-      </p>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="hero-name" class="hero-name">Katharina (Qiao-Yun) Cheng</h1>
+          <p class="subtitle">
+            Systems • Data • Scale
+          </p>
 
-      <div class="ctaRow">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="profolio_needed_doc/Qiao-Yun Cheng Resume.pdf" target="_blank" rel="noopener">
-            Resume
-        </a>
-        <a class="btn" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">
-            CV
-        </a>
-        <a class="btn" href="#contact">Contact</a>
+          <div class="ctaRow">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="profolio_needed_doc/Katharina Cheng Resume.pdf" target="_blank" rel="noopener">
+                Resume
+            </a>
+            <a class="btn" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">
+                CV
+            </a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="star-cloud-container">
+          <canvas id="starCloud" class="star-cloud"></canvas>
+        </div>
       </div>
     </section>
 
@@ -52,7 +57,7 @@
     <section class="section card" id="about">
       <h2>About</h2>
       <p class="muted">
-        I'm Qiao-Yun (Katharina) Cheng, a B.S. Informatics student at the University of Washington (Data Science concentration, graduating June 2026). I'm currently pursuing roles in Data Analytics / Data Science, Full-Stack Web Development, or ML/AI Engineering. Across these paths, I enjoy building systems that are technically solid and genuinely useful for real users and stakeholders.
+        I'm a B.S. Informatics student at the University of Washington (Data Science concentration, graduating June 2026). I'm currently pursuing roles in Data Analytics / Data Science, Full-Stack Web Development, or ML/AI Engineering. Across these paths, I enjoy building systems that are technically solid and genuinely useful for real users and stakeholders.
       </p>
 
       <div class="divider"></div>
@@ -153,8 +158,8 @@
             <div class="t-content">
               <div class="t-head">
                 <div>
-                  <h3 class="tight">Social Media Algorithms (X Community Notes)</h3>
-                  <p class="muted tight">Researcher · Seattle, WA</p>
+                  <h3 class="tight">Research Assistant</h3>
+                  <p class="muted tight">Social Media Algorithms (X Community Notes) · Seattle, WA</p>
                 </div>
                 <div class="t-date muted"><strong>Sep 2025 - Present</strong></div>
               </div>
@@ -173,8 +178,8 @@
           <div class="t-content">
             <div class="t-head">
               <div>
-                <h3 class="tight">University of Washington</h3>
-                <p class="muted tight">Teaching Assistant · Seattle, WA</p>
+                <h3 class="tight">Teaching Assistant</h3>
+                <p class="muted tight">University of Washington · Seattle, WA</p>
               </div>
               <div class="t-date muted"><strong>Sep 2024 - Jun 2025</strong></div>
             </div>
@@ -192,8 +197,8 @@
           <div class="t-content">
             <div class="t-head">
               <div>
-                <h3 class="tight">Svim</h3>
-                <p class="muted tight">UI/UX Designer · Seattle, WA</p>
+                <h3 class="tight">UI/UX Designer</h3>
+                <p class="muted tight">Svim · Seattle, WA</p>
               </div>
               <div class="t-date muted"><strong>Jun 2024 - Dec 2024</strong></div>
             </div>
@@ -218,10 +223,10 @@
         <!-- Study Buddy -->
         <article class="card project">
           <div class="proj-top">
-            <h3 class="tight">Study Buddy</h3>
+            <h3 class="tight">Project Lead & Full-Stack Developer</h3>
             <div class="muted"><strong>Oct 2025 - Dec 2025</strong></div>
           </div>
-          <p class="muted tight">Project Lead & Full-Stack Developer · Seattle, WA</p>
+          <p class="muted tight"><a class="link" href="https://final-project-qiaoyc2-1.onrender.com/login.html" target="_blank" rel="noopener">Study Buddy</a> · Seattle, WA</p>
           <ul class="bullets">
             <li>Led a 4-person team and produced the system architecture + schema + endpoint documentation for a UW-only study-partner platform with verified login and profiles</li>
             <li>Built homepage + invitation workflow and implemented session middleware to resolve current user identity</li>
@@ -232,10 +237,10 @@
         <!-- GameLensDB -->
         <article class="card project">
           <div class="proj-top">
-            <h3 class="tight">GameLensDB (NoSQL Video Game Metadata & Trends)</h3>
+            <h3 class="tight">Data Engineer (Web Scraping & MongoDB)</h3>
             <div class="muted"><strong>May 2025 - Jun 2025</strong></div>
           </div>
-          <p class="muted tight">Data Engineer (Web Scraping & MongoDB) · Seattle, WA</p>
+          <p class="muted tight">GameLensDB (NoSQL Video Game Metadata & Trends) · Seattle, WA</p>
           <ul class="bullets">
             <li>Scraped MobyGames with Selenium + BeautifulSoup, exporting JSON and loading 1,100+ titles into MongoDB</li>
             <li>Standardized 8 key attributes across 1.1k+ MongoDB docs, improving filterability and downstream analyses</li>
@@ -246,10 +251,10 @@
         <!-- Climate TRACE -->
         <article class="card project">
           <div class="proj-top">
-            <h3 class="tight">Climate TRACE Greenhouse Gas Data Warehouse</h3>
+            <h3 class="tight">Database Designer & ETL Developer</h3>
             <div class="muted"><strong>Apr 2025 - May 2025</strong></div>
           </div>
-          <p class="muted tight">Database Designer & ETL Developer · Seattle, WA</p>
+          <p class="muted tight">Climate TRACE Greenhouse Gas Data Warehouse · Seattle, WA</p>
           <ul class="bullets">
             <li>Designed a star-schema dimensional model and loaded it into Azure to support fast OLAP analysis</li>
             <li>Built ETL to ingest/clean 54 country-level CSVs (70k+ sites), mapped ISO codes to regions, and automated bulk load</li>
@@ -261,10 +266,10 @@
         <!-- Weather Visualization Dashboard -->
         <article class="card project">
             <div class="proj-top">
-                <h3 class="tight">Weather Visualization Dashboard</h3>
+                <h3 class="tight">Data Analyst</h3>
                 <div class="muted"><strong>Feb 2025 - Mar 2025</strong></div>
             </div>
-            <p class="muted tight">Data Analyst · Seattle, WA</p>
+            <p class="muted tight">Weather Visualization Dashboard · Seattle, WA</p>
             <ul class="bullets">
                 <li>Developed an interactive weather trends dashboard using D3.js and JavaScript, enabling users to compare daily or monthly average temperatures between global cities (2014-2015)</li>
                 <li>Integrated dropdown menus and responsive charts for dynamic data filtering and enhanced user interactivity</li>
@@ -275,10 +280,10 @@
         <!-- Climate Reddit -->
         <article class="card project">
           <div class="proj-top">
-            <h3 class="tight">Evaluating Comment-Post Relatedness in the Climate Reddit Community</h3>
+            <h3 class="tight">LLM Prompting Engineer (Data Science and Modeling)</h3>
             <div class="muted"><strong>Nov 2024 - Dec 2024</strong></div>
           </div>
-          <p class="muted tight">LLM Prompting Engineering (Data Science and Modeling) · Seattle, WA</p>
+          <p class="muted tight">Evaluating Comment-Post Relatedness in the Climate Reddit Community · Seattle, WA</p>
           <ul class="bullets">
             <li>Implement a binary text classification model to evaluate the relatedness of comments to post titles in the Climate subreddit, using Logistic Regression, BERT embeddings, and LLM prompting</li>
             <li>Trained and fine-tuned large language models (chatgpt3.5) with both zero-shot and few-shot prompting to predict the relevance of comments in climate-related Reddit posts</li>
@@ -289,10 +294,10 @@
         <!-- Recipe Finder -->
         <article class="card project">
           <div class="proj-top">
-            <h3 class="tight">Recipe Finder: Recipe Discovery and Recommendation Platform</h3>
+            <h3 class="tight">Search & Recommendation System Designer</h3>
             <div class="muted"><strong>Nov 2024 - Dec 2024</strong></div>
           </div>
-          <p class="muted tight">Search & Recommendation System Designer & Front-End Developer · Seattle, WA</p>
+          <p class="muted tight"><a class="link" href="profolio_needed_doc/Receipt_Finder.pdf" target="_blank" rel="noopener">Recipe Finder: Recipe Discovery and Recommendation Platform</a> · Seattle, WA</p>
           <ul class="bullets">
             <li>Designed a platform with information retrieval capabilities, leveraging information crawled from the internet</li>
             <li>Utilize a mapping function to suggest related queries and improve user experience over time</li>
@@ -346,6 +351,6 @@
   </footer>
   
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
