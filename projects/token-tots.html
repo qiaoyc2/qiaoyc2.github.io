@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Token Tots — AI Healthcare Chat Agent · Katharina Cheng</title>
+  <meta name="description" content="Capstone project: an iMessage-based AI healthcare agent for university students." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body data-page="projects">
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <span class="brand-text">Katharina C.</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="../index.html#about" data-page="home">About</a>
+        <a href="../index.html#education" data-page="home">Education</a>
+        <a href="../index.html#experience" data-page="home">Experience</a>
+        <a href="../index.html#contact" data-page="home">Contact</a>
+        <a href="../projects.html" data-page="projects" class="nav-projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+
+      <a href="../projects.html" class="back-link">← Back to projects</a>
+
+      <!-- Hero -->
+      <header class="project-hero">
+        <div class="project-tags">
+          <span class="tag tag-featured">Featured · Capstone</span>
+          <span class="tag">AI Engineer</span>
+        </div>
+        <h1 class="project-title">Token Tots — AI Healthcare Chat Agent</h1>
+        <h2 class="project-meta">
+          <span>AI Product Engineer</span>
+          <span class="dot-sep">·</span>
+          <span>Dec 2025 – Present</span>
+          <span class="dot-sep">·</span>
+          <span class="muted">Seattle, WA</span>
+        </h2>
+      </header>
+
+      <!-- About -->
+      <section class="section card">
+        <h3 class="subsection-title">About this project</h3>
+        <p class="muted lead">
+          Ava is an iMessage-based AI healthcare assistant designed to help university students manage medication instructions and diet guidance after a doctor's visit. Instead of requiring users to navigate a new healthcare portal or unfamiliar app, Ava meets users in a familiar messaging environment and turns messy prescription notes, symptoms, and daily routine information into structured guidance.
+        </p>
+        <p class="muted">
+          The agent supports medication reminders, prescription interpretation, multilingual conversation, and personalized meal planning. Users can send prescription text, photos, or PDFs, and Ava extracts medication details such as dosage, quantity, timing, and food-related instructions. It then schedules reminders around the user’s real routine, including wake time, bedtime, meal times, and skipped meals.
+        </p>
+
+        <p class="muted">
+          Ava also helps users generate a 7-day meal plan based on their condition, goals, dietary preferences, and medication-related restrictions. The final meal plan is exported as a polished PDF with daily meals and a grocery list, making the output easier to follow than a long text message.
+        </p>
+      </section>
+
+      <!-- My role -->
+      <section class="section card">
+        <h3 class="subsection-title">My role</h3>
+        <p class="muted">
+          As an AI Product Engineer on TokenTots, I primarily owned Ava's medication reminder system while also designing the overall technical architecture for the agent. My work focused on connecting conversational interaction, structured backend data, medication parsing, reminder scheduling, and user-facing guidance into one coherent iMessage-based experience.
+        </p>
+
+        <p class="muted">
+          I collaborated closely with another teammate who led the meal-planning feature, while I made sure the medication reminder logic could fit into the broader agent system. I also communicated with teammates working on research, design, and the frontend information page to align the product direction, user needs, and technical implementation.
+        </p>
+        <ul class="bullets">
+          <li>Designed the overall agent architecture, including how iMessage, Supabase, medication processing, reminder scheduling, meal planning, and PDF generation connect together.</li>
+          <li>Built the medication reminder flow that extracts prescription details, asks for the user's daily routine, and schedules reminders around wake time, bedtime, meal times, and skipped meals.</li>
+          <li>Designed reminder logic so alerts include medication context, such as quantity, food timing, timing notes, and relevant dietary restrictions, instead of functioning only as basic clock notifications.</li>
+          <li>Implemented reminder management features that allow users to review, edit, deactivate, reactivate, or check existing medication reminders through conversation.</li>
+          <li>Integrated structured Supabase storage for user routines, uploaded documents, message history, and active medication reminder records.</li>
+          <li>Collaborated with the meal-planning developer to ensure medication-related food restrictions and reminder data could support the broader meal guidance experience.</li>
+          <li>Coordinated with research, design, and frontend teammates to translate user needs, product scope, and technical constraints into a clear capstone experience.</li>
+        </ul>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section card">
+        <h3 class="subsection-title">Gallery</h3>
+        <p class="muted tight">Product visuals, capstone presentation, and supporting materials.</p>
+
+        <a
+          class="gallery-deck"
+          href="../profolio_needed_doc/final_presentation_slides.pdf"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open Token Tots capstone presentation slides (PDF)"
+        >
+          <div class="gallery-deck-preview">
+            <span class="gallery-deck-kicker">Capstone presentation</span>
+            <span class="gallery-deck-title">Token Tots — final presentation slides</span>
+            <span class="gallery-deck-hint muted tiny">Problem framing, MVP demo, architecture, and roadmap</span>
+          </div>
+          <span class="link-arrow gallery-deck-cta">View full deck →</span>
+        </a>
+
+        <div class="gallery-carousel" data-carousel tabindex="0" aria-label="Project image gallery">
+          <div class="gallery-carousel-viewport">
+            <button type="button" class="gallery-arrow gallery-arrow-prev" aria-label="Previous image">←</button>
+
+            <div class="gallery-carousel-track">
+              <figure class="gallery-slide is-active" data-caption="Technical Architecture Diagram">
+                <img src="../images/TokenTots_tech_arch.png" alt="Token Tots technical architecture diagram">
+              </figure>
+              <figure class="gallery-slide is-active" data-caption="Medication Reminders + Multi-lingual Handling">
+                <img src="../images/med_remind+multi_ling_handle.png" alt="Medication Reminders + Multi-lingual Handling">
+              </figure>
+              <figure class="gallery-slide is-active" data-caption="Meal Plan & Grocery List Generator">
+                <img src="../images/mealplan+grocerylist.png" alt="Meal Plan & Grocery List Generator">
+              </figure>
+            </div>
+
+            <button type="button" class="gallery-arrow gallery-arrow-next" aria-label="Next image">→</button>
+          </div>
+
+          <div class="gallery-carousel-footer">
+            <p class="gallery-caption muted tight">Technical Architecture Diagram</p>
+            <p class="gallery-counter muted tight">1 / 3</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="section card">
+        <h3 class="subsection-title">Live &amp; links</h3>
+        <ul class="cleanList">
+          <li>
+            <span class="muted">Information Page: </span>
+            <a href="https://info491-landingpage-tokentots-clientside.onrender.com/" class="link">
+              View website
+            </a>
+          </li>
+          <li>
+            <span class="muted">Project brief:</span>
+            <a href="../profolio_needed_doc/Final Product Documentation - TokenTots.pdf" class="link" target="_blank" rel="noopener">
+              Download PDF
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="back-cta">
+        <a class="btn" href="../projects.html">← Back to all projects</a>
+        <a class="btn primary" href="../index.html#contact">Get in touch →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner footer-center">
+      <p class="footer-line">
+        © <span id="year"></span> Qiao-Yun (Katharina) Cheng ·
+        <a class="link" href="https://github.com/qiaoyc2" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-line tiny muted">All rights reserved.</p>
+      <p class="footer-line tiny muted">Last updated: Jun 2026</p>
+    </div>
+  </footer>
+
+  <script src="../index.js"></script>
+</body>
+</html>

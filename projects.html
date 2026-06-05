@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Katharina Cheng</title>
+  <meta name="description" content="Selected projects by Katharina Cheng — capstone, data engineering, ML/AI, full-stack." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="projects">
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-text">Katharina C.</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html#about" data-page="home">About</a>
+        <a href="index.html#education" data-page="home">Education</a>
+        <a href="index.html#experience" data-page="home">Experience</a>
+        <a href="index.html#contact" data-page="home">Contact</a>
+        <a href="projects.html" data-page="projects" class="nav-projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+
+      <!-- Projects header -->
+      <header class="projects-hero">
+        <a href="index.html" class="back-link">← Back to home</a>
+        <h1 class="projects-title">Selected Projects</h1>
+        <p class="muted lead">
+          A mix of capstone work, data engineering, ML/AI, and full-stack builds — sorted by recency.
+        </p>
+      </header>
+
+      <!-- Featured: Capstone -->
+      <article class="section card featured" id="capstone">
+        <div class="featured-badge">Featured · Capstone · AI Engineer</div>
+        <div class="t-head">
+          <div>
+            <h2 class="project-name tight">Token Tots — AI Healthcare Chat Agent</h2>
+            <p class="muted tight">Seattle, WA</p>
+          </div>
+          <div class="t-date muted"><strong>Dec 2025 – Present</strong></div>
+        </div>
+        <p class="muted lead">
+          An iMessage-based AI healthcare agent that turns unstructured symptom descriptions into structured intake and care-navigation guidance for university students — delivered through a zero-learning-curve SMS interface with multilingual support and NIH-referenced medical context.
+        </p>
+        <div class="card-cta">
+          <a class="link-arrow" href="projects/token-tots.html">Read details →</a>
+        </div>
+      </article>
+
+      <!-- Project grid -->
+      <section class="section" id="projects">
+        <div class="section-head">
+          <h2>All Projects</h2>
+          <p class="muted tight">Six projects spanning full-stack, data engineering, ML/AI, and analytics.</p>
+        </div>
+
+        <div class="grid">
+          <!-- Study Buddy -->
+          <article class="card project">
+            <div class="proj-tag">Full-Stack</div>
+            <div class="proj-top">
+              <h3 class="tight">Project Lead &amp; Full-Stack Developer</h3>
+              <div class="muted"><strong>Oct 2025 – Dec 2025</strong></div>
+            </div>
+            <p class="muted tight"><a class="link" href="https://final-project-qiaoyc2-1.onrender.com/login.html" target="_blank" rel="noopener">Study Buddy</a> · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Led a 4-person team and produced the system architecture + schema + endpoint documentation for a UW-only study-partner platform with verified login and profiles</li>
+              <li>Built homepage + invitation workflow and implemented session middleware to resolve current user identity</li>
+              <li>Co-built real-time chat (WebSockets + database-backed chat history) for matched users</li>
+            </ul>
+          </article>
+
+          <!-- GameLensDB -->
+          <article class="card project">
+            <div class="proj-tag">Data Engineering</div>
+            <div class="proj-top">
+              <h3 class="tight">Data Engineer (Web Scraping &amp; MongoDB)</h3>
+              <div class="muted"><strong>May 2025 – Jun 2025</strong></div>
+            </div>
+            <p class="muted tight">GameLensDB — NoSQL Video Game Metadata &amp; Trends · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Scraped MobyGames with Selenium + BeautifulSoup, exporting JSON and loading 1,100+ titles into MongoDB</li>
+              <li>Standardized 8 key attributes across 1.1k+ MongoDB docs, improving filterability and downstream analyses</li>
+              <li>Designed aggregation pipelines to surface genre/platform trends, developer/publisher activity, and score vs. business model, packaged into concise takeaways</li>
+            </ul>
+          </article>
+
+          <!-- Climate TRACE -->
+          <article class="card project">
+            <div class="proj-tag">Data Warehouse</div>
+            <div class="proj-top">
+              <h3 class="tight">Database Designer &amp; ETL Developer</h3>
+              <div class="muted"><strong>Apr 2025 – May 2025</strong></div>
+            </div>
+            <p class="muted tight">Climate TRACE Greenhouse Gas Data Warehouse · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Designed a star-schema dimensional model and loaded it into Azure to support fast OLAP analysis</li>
+              <li>Built ETL to ingest/clean 54 country-level CSVs (70k+ sites), mapped ISO codes to regions, and automated bulk load</li>
+              <li>Authored advanced SQL (window function, CUBE, top-k sector) for analytics to surface policy-ready insights</li>
+              <li>Delivered dashboards/figures that highlighted persistent top emitters to inform mitigation focus areas</li>
+            </ul>
+          </article>
+
+          <!-- Weather Visualization Dashboard -->
+          <article class="card project">
+            <div class="proj-tag">Data Viz</div>
+            <div class="proj-top">
+              <h3 class="tight">Data Analyst</h3>
+              <div class="muted"><strong>Feb 2025 – Mar 2025</strong></div>
+            </div>
+            <p class="muted tight">Weather Visualization Dashboard · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Developed an interactive weather trends dashboard using D3.js and JavaScript, enabling users to compare daily or monthly average temperatures between global cities (2014–2015)</li>
+              <li>Integrated dropdown menus and responsive charts for dynamic data filtering and enhanced user interactivity</li>
+              <li>Cleaned and transformed raw historical weather data from Weather Underground</li>
+            </ul>
+          </article>
+
+          <!-- Climate Reddit -->
+          <article class="card project">
+            <div class="proj-tag">ML / NLP</div>
+            <div class="proj-top">
+              <h3 class="tight">LLM Prompting Engineer (Data Science and Modeling)</h3>
+              <div class="muted"><strong>Nov 2024 – Dec 2024</strong></div>
+            </div>
+            <p class="muted tight">Evaluating Comment-Post Relatedness in the Climate Reddit Community · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Implement a binary text classification model to evaluate the relatedness of comments to post titles in the Climate subreddit, using Logistic Regression, BERT embeddings, and LLM prompting</li>
+              <li>Trained and fine-tuned large language models (chatgpt3.5) with both zero-shot and few-shot prompting to predict the relevance of comments in climate-related Reddit posts</li>
+              <li>Crawled the subreddit and structured data around 600 Reddit posts, facilitated the training of models</li>
+            </ul>
+          </article>
+
+          <!-- Recipe Finder -->
+          <article class="card project">
+            <div class="proj-tag">Information Retrieval</div>
+            <div class="proj-top">
+              <h3 class="tight">Search &amp; Recommendation System Designer</h3>
+              <div class="muted"><strong>Nov 2024 – Dec 2024</strong></div>
+            </div>
+            <p class="muted tight"><a class="link" href="profolio_needed_doc/receipt_finder.pdf" target="_blank" rel="noopener">Recipe Finder — Recipe Discovery and Recommendation Platform</a> · Seattle, WA</p>
+            <ul class="bullets">
+              <li>Designed a platform with information retrieval capabilities, leveraging information crawled from the internet</li>
+              <li>Utilize a mapping function to suggest related queries and improve user experience over time</li>
+              <li>Integrated PyTerrier and the BM25 ranking model to ensure efficient and relevant recipe retrieval</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="back-cta">
+        <a class="btn" href="index.html">← Back to home</a>
+        <a class="btn primary" href="index.html#contact">Get in touch →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner footer-center">
+      <p class="footer-line">
+        © <span id="year"></span> Qiao-Yun (Katharina) Cheng ·
+        <a class="link" href="https://github.com/qiaoyc2" target="_blank" rel="noopener">GitHub</a>
+      </p>
+      <p class="footer-line tiny muted">All rights reserved.</p>
+      <p class="footer-line tiny muted">Last updated: Jun 2026</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

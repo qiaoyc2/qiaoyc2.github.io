@@ -6,155 +6,151 @@
   <title>Katharina Cheng | Portfolio</title>
   <meta name="description" content="Katharina Cheng — UW Informatics (Data Science). Interests: DA/DS, Full-Stack, ML/AI." />
   <link rel="stylesheet" href="styles.css" />
-  
 </head>
 
-<body>
+<body data-page="home">
   <header class="site-header">
     <div class="nav">
-      <a class="brand" href="#top" aria-label="Home">
+      <a class="brand" href="index.html" aria-label="Home">
         <span class="brand-text">Katharina C.</span>
       </a>
 
       <nav class="navlinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#capstone">Capstone</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-page="home">About</a>
+        <a href="#education" data-page="home">Education</a>
+        <a href="#experience" data-page="home">Experience</a>
+        <a href="#contact" data-page="home">Contact</a>
+        <a href="projects.html" data-page="projects" class="nav-projects">Projects</a>
       </nav>
     </div>
   </header>
 
-  <main id="top" class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 id="hero-name" class="hero-name">Katharina (Qiao-Yun) Cheng</h1>
-          <p class="subtitle">
-            Systems • Data • Scale
-          </p>
+  <main id="top">
+    <div class="container">
 
-          <div class="ctaRow">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="profolio_needed_doc/Katharina Cheng Resume.pdf" target="_blank" rel="noopener">
-                Resume
-            </a>
-            <a class="btn" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">
-                CV
-            </a>
-            <a class="btn" href="#contact">Contact</a>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="kicker">Portfolio · 2026</p>
+            <h1 id="hero-name" class="hero-name">Katharina (Qiao-Yun) Cheng</h1>
+            <p class="subtitle">
+              Systems · Data · Scale — building tools that turn messy data into useful products.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="projects.html">View Projects →</a>
+              <a class="btn" href="profolio_needed_doc/Katharina Cheng Resume.pdf" target="_blank" rel="noopener">Resume</a>
+              <a class="btn" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">CV</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="star-cloud-container">
+            <canvas id="starCloud" class="star-cloud"></canvas>
           </div>
         </div>
-        <div class="star-cloud-container">
-          <canvas id="starCloud" class="star-cloud"></canvas>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ABOUT (Skills merged here) -->
-    <section class="section card" id="about">
-      <h2>About</h2>
-      <p class="muted">
-        I'm a B.S. Informatics student at the University of Washington (Data Science concentration, graduating June 2026). I'm currently pursuing roles in Data Analytics / Data Science, Full-Stack Web Development, or ML/AI Engineering. Across these paths, I enjoy building systems that are technically solid and genuinely useful for real users and stakeholders.
-      </p>
+      <!-- ABOUT -->
+      <section class="section card" id="about">
+        <h2 class="section-title">01 · About</h2>
+        <p class="muted lead">
+          I'm a B.S. Informatics student at the University of Washington (Data Science concentration, graduating June 2026). I'm currently pursuing roles in Data Analytics / Data Science, Full-Stack Web Development, or ML/AI Engineering. Across these paths, I enjoy building systems that are technically solid and genuinely useful for real users and stakeholders.
+        </p>
 
-      <div class="divider"></div>
+        <div class="divider"></div>
 
-      <div class="two-col">
-        <div>
-          <h3>What I'm focused on</h3>
-          <p class="muted">
-            I build end-to-end systems across data analytics, ML/AI workflows, and full-stack web development—from ETL and dashboards to clustering/topic modeling and user-facing apps that turn insights into action. Right now, I'm strongest in Python/SQL analytics and web development, and I'm actively deepening my ML/AI engineering skills through projects and coursework.
-          </p>
-        </div>
-        <div>
-          <h3>What I'm looking for</h3>
-          <p class="muted">
-            I'm seeking internship or early-career roles in Data Analytics / Data Science, Machine Learning, or Full-Stack Web Development. I'm especially interested in teams where I can combine data wrangling + modeling + visualization with building production-ready features—turning messy data into insights and shipping tools that make those insights usable.
-          </p>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <h3>Skills</h3>
-
-      <div class="skills-grid">
-        <div class="skillBlock">
-          <h3>Languages</h3>
-          <div class="pillRow">
-            <span class="pill">Python</span>
-            <span class="pill">R</span>
-            <span class="pill">Java</span>
-            <span class="pill">SQL</span>
-            <span class="pill">JavaScript</span>
-            <span class="pill">HTML</span>
-            <span class="pill">CSS</span>
+        <div class="two-col">
+          <div>
+            <h3>What I'm focused on</h3>
+            <p class="muted">
+              I build end-to-end systems across data analytics, ML/AI workflows, and full-stack web development—from ETL and dashboards to clustering/topic modeling and user-facing apps that turn insights into action. Right now, I'm strongest in Python/SQL analytics and web development, and I'm actively deepening my ML/AI engineering skills through projects and coursework.
+            </p>
+          </div>
+          <div>
+            <h3>What I'm looking for</h3>
+            <p class="muted">
+              I'm seeking internship or early-career roles in Data Analytics / Data Science, Machine Learning, or Full-Stack Web Development. I'm especially interested in teams where I can combine data wrangling + modeling + visualization with building production-ready features—turning messy data into insights and shipping tools that make those insights usable.
+            </p>
           </div>
         </div>
 
-        <div class="skillBlock">
-          <h3>Frameworks & Tools</h3>
-          <div class="pillRow">
-            <span class="pill">React</span>
-            <span class="pill">Node/Express</span>
-            <span class="pill">MongoDB</span>
-            <span class="pill">Firebase</span>
-            <span class="pill">Azure</span>
-            <span class="pill">Tableau</span>
-            <span class="pill">Plotly</span>
-            <span class="pill">Selenium</span>
-            <span class="pill">BeautifulSoup</span>
+        <div class="divider"></div>
+
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skillBlock">
+            <h3>Languages</h3>
+            <div class="pillRow">
+              <span class="pill">Python</span>
+              <span class="pill">R</span>
+              <span class="pill">Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+            </div>
+          </div>
+
+          <div class="skillBlock">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="pillRow">
+              <span class="pill">React</span>
+              <span class="pill">Node/Express</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Firebase</span>
+              <span class="pill">Azure</span>
+              <span class="pill">Tableau</span>
+              <span class="pill">Plotly</span>
+              <span class="pill">Selenium</span>
+              <span class="pill">BeautifulSoup</span>
+            </div>
+          </div>
+
+          <div class="skillBlock">
+            <h3>Core Strengths</h3>
+            <div class="pillRow">
+              <span class="pill">Data wrangling</span>
+              <span class="pill">Data visualization</span>
+              <span class="pill">ETL + dimensional modeling</span>
+              <span class="pill">LLM prompting + evaluation</span>
+              <span class="pill">Full-stack delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section card" id="education">
+        <h2 class="section-title">02 · Education</h2>
+
+        <div class="edu-row">
+          <div>
+            <h3 class="tight">University of Washington</h3>
+            <p class="muted tight">Seattle, WA</p>
+          </div>
+          <div class="edu-meta">
+            <p class="muted tight"><strong>June 2026</strong></p>
           </div>
         </div>
 
-        <div class="skillBlock">
-          <h3>Core Strengths</h3>
-          <div class="pillRow">
-            <span class="pill">Data wrangling</span>
-            <span class="pill">Data visualization</span>
-            <span class="pill">ETL + dimensional modeling</span>
-            <span class="pill">LLM prompting + evaluation</span>
-            <span class="pill">Full-stack delivery</span>
-          </div>
+        <p class="muted tight">
+          Bachelor of Science in Informatics, Concentration: Data Science
+        </p>
+
+        <div class="edu-row small">
+          <p class="muted tight">Annual Dean's List (2022 – 2025)</p>
+          <p class="muted tight"><strong>Cumulative GPA: 3.81 / 4.0</strong></p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section class="section card" id="education">
-      <h2>Education</h2>
+      <!-- EXPERIENCE -->
+      <section class="section card" id="experience">
+        <h2 class="section-title">03 · Experience</h2>
 
-      <div class="edu-row">
-        <div>
-          <h3 class="tight">University of Washington</h3>
-          <p class="muted tight">Seattle, WA</p>
-        </div>
-        <div class="edu-meta">
-          <p class="muted tight"><strong>June 2026</strong></p>
-        </div>
-      </div>
-
-      <p class="muted tight">
-        Bachelor of Science in Informatics, Concentration: Data Science
-      </p>
-
-      <div class="edu-row small">
-        <p class="muted tight">Annual Dean’s List (2022 – 2025)</p>
-        <p class="muted tight"><strong>Cumulative GPA: 3.81 / 4.0</strong></p>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE (Timeline) -->
-    <section class="section card" id="experience">
-      <h2>Experience</h2>
-
-      <div class="timeline">
-        <!-- Research -->
-        <div class="t-item">
+        <div class="timeline">
+          <!-- Research -->
+          <div class="t-item">
             <div class="t-dot" aria-hidden="true"></div>
             <div class="t-content">
               <div class="t-head">
@@ -162,198 +158,81 @@
                   <h3 class="tight">Research Assistant</h3>
                   <p class="muted tight">Social Media Algorithms (X Community Notes) · Seattle, WA</p>
                 </div>
-                <div class="t-date muted"><strong>Sep 2025 - Present</strong></div>
+                <div class="t-date muted"><strong>Sep 2025 – Present</strong></div>
               </div>
               <ul class="bullets">
                 <li>Analyzed large-scale Community Notes data by cleaning and joining tables to compare latent factor/intercept behavior</li>
                 <li>Built an interpretation pipeline for latent representations using K-means clustering in 3-factor space and iterative experiments to balance interpretability and overfitting</li>
-                <li>Implemented LLM-assisted cluster/factor annotation with controlled positive/negative examples and repeated runs to assess stability; validated labels via manual “smell-check” (73% clear, 87% partial match across sampled notes)</li>
+                <li>Implemented LLM-assisted cluster/factor annotation with controlled positive/negative examples and repeated runs to assess stability; validated labels via manual "smell-check" (73% clear, 87% partial match across sampled notes)</li>
                 <li>Executed topic prediction locally and visualized topic- and cluster-based structure in interactive 3D (Plotly); evaluated confidence-threshold sensitivity to balance coverage and label reliability</li>
               </ul>
             </div>
           </div>
-        
-        <!-- UW TA -->
-        <div class="t-item">
-          <div class="t-dot" aria-hidden="true"></div>
-          <div class="t-content">
-            <div class="t-head">
-              <div>
-                <h3 class="tight">Teaching Assistant</h3>
-                <p class="muted tight">University of Washington · Seattle, WA</p>
+
+          <!-- UW TA -->
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-head">
+                <div>
+                  <h3 class="tight">Teaching Assistant</h3>
+                  <p class="muted tight">University of Washington · Seattle, WA</p>
+                </div>
+                <div class="t-date muted"><strong>Sep 2024 – Jun 2025</strong></div>
               </div>
-              <div class="t-date muted"><strong>Sep 2024 - Jun 2025</strong></div>
+              <ul class="bullets">
+                <li>Conduct lab sessions for INFO 103, facilitate discussions on social media history, privacy, consent, and free speech</li>
+                <li>Grade assignments and provide feedback to students on their performance, ensuring clarity and accuracy</li>
+                <li>Support students applying concepts to automation projects like Bluesky, Reddit, or Discord bot</li>
+              </ul>
             </div>
-            <ul class="bullets">
-              <li>Conduct lab sessions for INFO 103, facilitate discussions on social media history, privacy, consent, and free speech</li>
-              <li>Grade assignments and provide feedback to students on their performance, ensuring clarity and accuracy</li>
-              <li>Support students applying concepts to automation projects like Bluesky, Reddit, or Discord bot</li>
-            </ul>
           </div>
-        </div>
 
-        <!-- Svim -->
-        <div class="t-item">
-          <div class="t-dot" aria-hidden="true"></div>
-          <div class="t-content">
-            <div class="t-head">
-              <div>
-                <h3 class="tight">UI/UX Designer</h3>
-                <p class="muted tight">Svim · Seattle, WA</p>
+          <!-- Svim -->
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-head">
+                <div>
+                  <h3 class="tight">UI/UX Designer</h3>
+                  <p class="muted tight">Svim · Seattle, WA</p>
+                </div>
+                <div class="t-date muted"><strong>Jun 2024 – Dec 2024</strong></div>
               </div>
-              <div class="t-date muted"><strong>Jun 2024 - Dec 2024</strong></div>
+              <ul class="bullets">
+                <li>Designed and launched Svim's first website, providing a user-friendly interface for global participants</li>
+                <li>Acquired in-depth knowledge of the underlying logic and trading patterns for Web3 online trading platforms</li>
+                <li>Able to independently complete tasks on time and deliver high-quality results consistently</li>
+              </ul>
             </div>
-            <ul class="bullets">
-              <li>Designed and launched Svim's first website, providing a user-friendly interface for global participants</li>
-              <li>Acquired in-depth knowledge of the underlying logic and trading patterns for Web3 online trading platforms</li>
-              <li>Able to independently complete tasks on time and deliver high-quality results consistently</li>
-            </ul>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- CAPSTONE -->
-    <section class="section card" id="capstone">
-      <h2>Capstone</h2>
-
-      <div class="t-content">
-        <div class="t-head">
-          <div>
-            <h3 class="tight">AI Product Engineer</h3>
-            <p class="muted tight">Token Tots (AI Healthcare Chat Agent) · Seattle, WA</p>
-          </div>
-          <div class="t-date muted"><strong> Dec 2025 - Present</strong></div>
-        </div>
-        <ul class="bullets">
-          <li>Building an iMessage-based AI healthcare agent that converts unstructured symptom descriptions into structured conversational intake and care-navigation guidance for university students.</li>
-          <li>Developed an end-to-end MVP with real-time messaging, adaptive follow-up questioning, multilingual support, and structured outputs including pre-diagnosis context, safety flags, care routing, and next-step recommendations.</li>
-          <li>Connected the agent to external medical data sources to return NIH-referenced condition information and more actionable symptom guidance.</li>
-          <li>Improved usability by designing around a zero-learning-curve SMS interface, eliminating the need for users to navigate unfamiliar healthcare portals or apps.</li>
-          <li>Used iterative user research and testing to identify pain points in response length, cognitive load, and triage clarity, informing roadmap priorities such as insurance-aware recommendations, symptom-visit summaries, and secure conversation handling.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="grid">
-        <!-- Study Buddy -->
-        <article class="card project">
-          <div class="proj-top">
-            <h3 class="tight">Project Lead & Full-Stack Developer</h3>
-            <div class="muted"><strong>Oct 2025 - Dec 2025</strong></div>
-          </div>
-          <p class="muted tight"><a class="link" href="https://final-project-qiaoyc2-1.onrender.com/login.html" target="_blank" rel="noopener">Study Buddy</a> · Seattle, WA</p>
-          <ul class="bullets">
-            <li>Led a 4-person team and produced the system architecture + schema + endpoint documentation for a UW-only study-partner platform with verified login and profiles</li>
-            <li>Built homepage + invitation workflow and implemented session middleware to resolve current user identity</li>
-            <li>Co-built real-time chat (WebSockets + database-backed chat history) for matched users</li>
-          </ul>
-        </article>
-
-        <!-- GameLensDB -->
-        <article class="card project">
-          <div class="proj-top">
-            <h3 class="tight">Data Engineer (Web Scraping & MongoDB)</h3>
-            <div class="muted"><strong>May 2025 - Jun 2025</strong></div>
-          </div>
-          <p class="muted tight">GameLensDB (NoSQL Video Game Metadata & Trends) · Seattle, WA</p>
-          <ul class="bullets">
-            <li>Scraped MobyGames with Selenium + BeautifulSoup, exporting JSON and loading 1,100+ titles into MongoDB</li>
-            <li>Standardized 8 key attributes across 1.1k+ MongoDB docs, improving filterability and downstream analyses</li>
-            <li>Designed aggregation pipelines to surface genre/platform trends, developer/publisher activity, and score vs. business model, packaged into concise takeaways</li>
-          </ul>
-        </article>
-
-        <!-- Climate TRACE -->
-        <article class="card project">
-          <div class="proj-top">
-            <h3 class="tight">Database Designer & ETL Developer</h3>
-            <div class="muted"><strong>Apr 2025 - May 2025</strong></div>
-          </div>
-          <p class="muted tight">Climate TRACE Greenhouse Gas Data Warehouse · Seattle, WA</p>
-          <ul class="bullets">
-            <li>Designed a star-schema dimensional model and loaded it into Azure to support fast OLAP analysis</li>
-            <li>Built ETL to ingest/clean 54 country-level CSVs (70k+ sites), mapped ISO codes to regions, and automated bulk load</li>
-            <li>Authored advanced SQL (window function, CUBE, top-k sector) for analytics to surface policy-ready insights</li>
-            <li>Delivered dashboards/figures that highlighted persistent top emitters to inform mitigation focus areas</li>
-          </ul>
-        </article>
-
-        <!-- Weather Visualization Dashboard -->
-        <article class="card project">
-            <div class="proj-top">
-                <h3 class="tight">Data Analyst</h3>
-                <div class="muted"><strong>Feb 2025 - Mar 2025</strong></div>
-            </div>
-            <p class="muted tight">Weather Visualization Dashboard · Seattle, WA</p>
-            <ul class="bullets">
-                <li>Developed an interactive weather trends dashboard using D3.js and JavaScript, enabling users to compare daily or monthly average temperatures between global cities (2014-2015)</li>
-                <li>Integrated dropdown menus and responsive charts for dynamic data filtering and enhanced user interactivity</li>
-                <li>Cleaned and transformed raw historical weather data from Weather Underground</li>
-            </ul>
-        </article>
-  
-        <!-- Climate Reddit -->
-        <article class="card project">
-          <div class="proj-top">
-            <h3 class="tight">LLM Prompting Engineer (Data Science and Modeling)</h3>
-            <div class="muted"><strong>Nov 2024 - Dec 2024</strong></div>
-          </div>
-          <p class="muted tight">Evaluating Comment-Post Relatedness in the Climate Reddit Community · Seattle, WA</p>
-          <ul class="bullets">
-            <li>Implement a binary text classification model to evaluate the relatedness of comments to post titles in the Climate subreddit, using Logistic Regression, BERT embeddings, and LLM prompting</li>
-            <li>Trained and fine-tuned large language models (chatgpt3.5) with both zero-shot and few-shot prompting to predict the relevance of comments in climate-related Reddit posts</li>
-            <li>Crawled the subreddit and structured data around 600 Reddit posts, facilitated the training of models</li>
-          </ul>
-        </article>
-
-        <!-- Recipe Finder -->
-        <article class="card project">
-          <div class="proj-top">
-            <h3 class="tight">Search & Recommendation System Designer</h3>
-            <div class="muted"><strong>Nov 2024 - Dec 2024</strong></div>
-          </div>
-          <p class="muted tight"><a class="link" href="profolio_needed_doc/receipt_finder.pdf" target="_blank" rel="noopener">Recipe Finder: Recipe Discovery and Recommendation Platform</a> · Seattle, WA</p>
-          <ul class="bullets">
-            <li>Designed a platform with information retrieval capabilities, leveraging information crawled from the internet</li>
-            <li>Utilize a mapping function to suggest related queries and improve user experience over time</li>
-            <li>Integrated PyTerrier and the BM25 ranking model to ensure efficient and relevant recipe retrieval</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT  -->
-    <section class="section card" id="contact">
-        <h2>Contact</h2>
-        <p class="muted">
-        The fastest way to reach me is email. You can also find me on LinkedIn and GitHub.
+      <!-- CONTACT -->
+      <section class="section card" id="contact">
+        <h2 class="section-title">04 · Contact</h2>
+        <p class="muted lead">
+          The fastest way to reach me is email. You can also find me on LinkedIn and GitHub.
         </p>
-    
+
         <div class="divider"></div>
-    
+
         <div class="contact-grid single">
-        <div class="contactCard">
+          <div class="contactCard">
             <h3>Links</h3>
             <ul class="cleanList">
-            <li><a class="link" href="mailto:qiaoyc2@uw.edu">qiaoyc2@uw.edu</a></li>
-            <li><a class="link" href="http://www.linkedin.com/in/qiaoyc" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a class="link" href="https://github.com/qiaoyc2" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a class="link" href="profolio_needed_doc/Katharina Cheng Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
-            <li><a class="link" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">CV</a></li>
+              <li><a class="link" href="mailto:qiaoyc2@uw.edu">qiaoyc2@uw.edu</a></li>
+              <li><a class="link" href="http://www.linkedin.com/in/qiaoyc" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a class="link" href="https://github.com/qiaoyc2" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a class="link" href="profolio_needed_doc/Katharina Cheng Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+              <li><a class="link" href="profolio_needed_doc/CV.pdf" target="_blank" rel="noopener">CV</a></li>
             </ul>
+          </div>
         </div>
-        </div>
-    </section>
-  
+      </section>
 
+    </div>
   </main>
 
   <footer class="footer">
@@ -362,17 +241,10 @@
         © <span id="year"></span> Qiao-Yun (Katharina) Cheng ·
         <a class="link" href="https://github.com/qiaoyc2" target="_blank" rel="noopener">GitHub</a>
       </p>
-  
-      <p class="footer-line tiny muted">
-        All rights reserved.
-      </p>
-  
-      <p class="footer-line tiny muted">
-        Last updated: Jan 2026</span>
-      </p>
+      <p class="footer-line tiny muted">All rights reserved.</p>
+      <p class="footer-line tiny muted">Last updated: Jun 2026</p>
     </div>
   </footer>
-  
 
   <script src="index.js"></script>
 </body>
