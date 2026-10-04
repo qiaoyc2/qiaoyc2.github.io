@@ -1,0 +1,16 @@
+<!-- Favicon placeholder: a monogram. Swap in a real icon by replacing this file
+     (any of icon.svg / icon.png / favicon.ico works here in the App Router). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KC">
+  <rect width="64" height="64" rx="14" fill="#6D51A6" />
+  <text
+    x="50%"
+    y="50%"
+    dy="0.35em"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-family="ui-sans-serif, system-ui, sans-serif"
+    font-size="30"
+    font-weight="700"
+    letter-spacing="-1"
+  >KC</text>
+</svg>

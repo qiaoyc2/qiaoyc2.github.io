@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/*
+  next-themes toggles a `.dark` class on <html>, so the dark variant has to key off
+  that class rather than Tailwind v4's default `prefers-color-scheme` media query.
+  System preference still wins by default — next-themes resolves it to the class.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------------------------------------------------------------------------
+   Design tokens
+
+   One accent (the purple carried over from the original site) plus a neutral
+   ramp. Change --accent in both blocks below to re-skin the whole site.
+   Dark mode uses a lighter accent so it keeps ~7:1 contrast on the dark surface.
+--------------------------------------------------------------------------- */
+:root {
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f6f5f8;
+  --foreground: #17161c;
+  --muted-foreground: #57536a;
+  --border: #e5e3ec;
+  --border-strong: #d3cfdf;
+  --accent: #6d51a6;
+  --accent-hover: #5c4390;
+  --accent-foreground: #ffffff;
+  --accent-subtle: #f2edfa;
+  --ring: #6d51a6;
+}
+
+.dark {
+  --background: #0b0819;
+  --surface: #131024;
+  --surface-muted: #191631;
+  --foreground: #f4f3f8;
+  --muted-foreground: #a9a4bd;
+  --border: #272138;
+  --border-strong: #362e4d;
+  --accent: #a78bda;
+  --accent-hover: #baa3e6;
+  --accent-foreground: #17122b;
+  --accent-subtle: #1c1733;
+  --ring: #a78bda;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --radius-card: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Keeps anchor targets clear of the sticky header. */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* A single visible focus style for every interactive element. */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Long project names and URLs should wrap rather than widen the page. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+}
+
+/*
+  Tailwind's `transition-colors` animates outline-color, so a focus ring fades
+  in from the element's own text colour — on the accent button that start
+  colour is nearly invisible against the page. Focus rings have to be legible
+  the instant they appear, so opt them out of transitions.
+
+  Deliberately unlayered: this has to outrank the `transition-colors` utility,
+  and utilities beat @layer base at equal specificity.
+*/
+:focus-visible {
+  transition-property: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

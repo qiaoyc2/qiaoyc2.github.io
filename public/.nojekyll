@@ -1,0 +1,2 @@
+Prevents GitHub Pages from running Jekyll, which would strip the _next/ directory
+and serve the site without any JavaScript or CSS. Do not delete this file.
